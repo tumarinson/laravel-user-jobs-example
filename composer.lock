@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12524947d8c752f84bc21aaaede06bfa",
+    "content-hash": "71da62db3e55521ad686228fdb769ba9",
     "packages": [
         {
             "name": "brick/math",
@@ -4869,6 +4869,61 @@
             "time": "2021-12-08T09:12:39+00:00"
         },
         {
+            "name": "tumarinson/laravel-user-jobs",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tumarinson/laravel-user-jobs.git",
+                "reference": "cd31aa711d8a5e3fee25f3f367949ed428313ae6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tumarinson/laravel-user-jobs/zipball/cd31aa711d8a5e3fee25f3f367949ed428313ae6",
+                "reference": "cd31aa711d8a5e3fee25f3f367949ed428313ae6",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^7.0|^8.0|^9.0",
+                "illuminate/support": "^7.0|^8.0|^9.0",
+                "php": "^7.3|^8.0|^8.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tumarinson\\UserJobs\\UserJobServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tumarinson\\UserJobs\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dmitriy Tumarinson",
+                    "email": "tumarinsond@gmail.com"
+                }
+            ],
+            "description": "User jobs for laravel",
+            "keywords": [
+                "jobs",
+                "laravel",
+                "user"
+            ],
+            "support": {
+                "issues": "https://github.com/tumarinson/laravel-user-jobs/issues",
+                "source": "https://github.com/tumarinson/laravel-user-jobs/tree/master"
+            },
+            "time": "2022-05-02T08:32:52+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.4.1",
             "source": {
@@ -7734,7 +7789,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "tumarinson/laravel-user-jobs": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
